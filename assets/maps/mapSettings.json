@@ -1,0 +1,14 @@
+{
+  "b": {
+    "path": "assets/sprites/ground/block.png",
+    "type": "block"
+  },
+  "s": {
+      "path": "assets/sprites/spikes/spike.png",
+      "type": "spike"
+  },
+  "j": {
+      "path": "assets/sprites/bumper/bumper.png",
+      "type": "bumper"
+  }
+}

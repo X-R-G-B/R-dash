@@ -1,0 +1,46 @@
+{
+  "parallax": [
+    {
+        "spritePath": "assets/sprites/background/blue_sky.png",
+        "width": 100.0,
+        "height": 100.0,
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "velocity": {
+          "speedX": -10,
+          "speedY": 0
+        },
+        "copy": true
+    },
+    {
+      "spritePath": "assets/sprites/background/parallax_2_building.png",
+      "width": 100.0,
+      "height": 100.0,
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "velocity": {
+        "speedX": -20,
+        "speedY": 0
+      },
+      "copy": true
+    },
+    {
+      "spritePath": "assets/sprites/background/parallax_2.png",
+      "width": 100,
+      "height": 100,
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "velocity": {
+        "speedX": -30,
+        "speedY": 0
+      },
+      "copy": true
+    }
+  ]
+}

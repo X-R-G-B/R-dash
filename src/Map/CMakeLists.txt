@@ -9,9 +9,6 @@ target_include_directories(
 target_sources(
         ${PROJECT_NAME}
         PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/GameSystems.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/CustomTypes.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/parallax.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/createMap.cpp
 )
-
-add_subdirectory(Map)
