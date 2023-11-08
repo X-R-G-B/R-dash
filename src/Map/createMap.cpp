@@ -20,7 +20,7 @@ namespace Map {
 
         auto collisionRect = Types::CollisionRect{1000, 1000};
         auto type = Json::getInstance().getDataFromJson<std::string>(Json::getInstance().getDataByJsonType(path, value), "type");
-        auto vel = Types::Velocity{-40, 0};
+        auto vel = Types::Velocity{-50, 0};
         auto noRem = Types::NoRemoveOutside();
         if (type == "block") {
             Types::Block block = {};

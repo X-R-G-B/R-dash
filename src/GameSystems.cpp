@@ -16,12 +16,10 @@ namespace GameSystems {
         static float decrementor = 1;
 
         for (auto id : ids) {
-            Logger::info("gravity player act : " + std::to_string(players[id].action));
             if (players[id].action == Types::Action::TOJUMP) {
                 incrementor = 20;
                 vel[id].speedY += incrementor;
                 incrementor -= decrementor;
-                Logger::info("TOJUMP TO JUMP");
                 players[id].action = Types::Action::JUMP;
             } else if (players[id].action == Types::Action::TOFALL) {
                 incrementor = 0;
@@ -50,9 +48,7 @@ namespace GameSystems {
 
         if (Raylib::KeyboardInput::isKeyDown(Raylib::KeyboardKey::KB_SPACE)) {
             for (auto &player : players) {
-                Logger::info("jump player act : " + std::to_string(player.action));
                 if (player.action == Types::Action::SLIDE) {
-                    Logger::info("TOJUMP");
                     player.action = Types::Action::TOJUMP;
                 }
             }
@@ -97,14 +93,11 @@ namespace GameSystems {
         auto ids = players.getExistingsId();
 
         for (auto id : ids) {
-            Logger::info("apply gravity player act : " + std::to_string(players[id].action));
             auto &player = players[id];
             if (player.action == Types::Action::FALL && checkBlockCol(id)) {
-                Logger::info("set to slide");
                 player.action = Types::Action::SLIDE;
                 vel[id].speedY = 0;
             } else if (player.action == Types::Action::SLIDE && checkBlockCol(id) == false) {
-                Logger::info("set to toFall");
                 player.action = Types::Action::TOFALL;
             }
         }

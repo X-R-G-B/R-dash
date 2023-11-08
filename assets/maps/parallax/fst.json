@@ -9,7 +9,7 @@
           "y": 0
         },
         "velocity": {
-          "speedX": -10,
+          "speedX": -20,
           "speedY": 0
         },
         "copy": true
@@ -23,7 +23,7 @@
         "y": 0
       },
       "velocity": {
-        "speedX": -20,
+        "speedX": -30,
         "speedY": 0
       },
       "copy": true
@@ -37,7 +37,7 @@
         "y": 0
       },
       "velocity": {
-        "speedX": -30,
+        "speedX": -40,
         "speedY": 0
       },
       "copy": true
