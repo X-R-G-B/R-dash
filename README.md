@@ -8,5 +8,7 @@ R-dash is a game inspired by Geometry Dash, built using the B-luga ECS. For more
 
    ```bash
    cmake -S . -B build
+   ```
+   ```bash
    cmake --build build
    ```
